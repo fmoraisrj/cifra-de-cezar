@@ -1,0 +1,15 @@
+.content{
+	text-align: center;
+	margin: 5% 30%;
+	background-color: #eee;
+	border-radius: 10px;
+}
+
+span.arrow {
+	font-size: 20px;
+	position: relative;
+	top: 4px;
+}
+.btn-main {
+	margin-top: 25px;
+}

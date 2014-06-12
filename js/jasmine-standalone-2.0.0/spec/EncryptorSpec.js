@@ -1,18 +1,30 @@
 describe("Encryptor", function() {
-  var player;
-  var song;
+  var encryptor;
 
   beforeEach(function() {
-    player = new Player();
-    song = new Song();
+    encryptor = new Encryptor();
   });
 
-  // it("should be able to play a Song", function() {
-  //   player.play(song);
-  //   expect(player.currentlyPlayingSong).toEqual(song);
+  describe("", function(){
 
-  //   //demonstrates use of custom matcher
-  //   expect(player).toBePlaying(song);
+  });
+
+  it("should respond a empty text", function() {
+    answer = encryptor.encrypt('', 3);
+
+    expect(answer).toEqual('');
+  });
+
+  it("should responde a code of each letter as a list", function() {
+    answer = encryptor.encrypt('ABC', 3);
+
+    expect(answer).toEqual("DEF");
+  });
+
+  // it("should receive a message abc and respond def", function() {
+  //   answer = encryptor.encrypt('abc', 3);
+
+  //   expect(answer).toEqual('def');
   // });
 
   // describe("when song has been paused", function() {
